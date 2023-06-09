@@ -383,32 +383,185 @@ document.write(`
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> 
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;spotify_songs.csv&#39;</span><span class="p">,</span> <span class="n">sep</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hoi&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hoi
-</pre></div>
-</div>
-</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>track_id</th>
+      <th>track_name</th>
+      <th>track_artist</th>
+      <th>lyrics</th>
+      <th>track_popularity</th>
+      <th>track_album_id</th>
+      <th>track_album_name</th>
+      <th>track_album_release_date</th>
+      <th>playlist_name</th>
+      <th>playlist_id</th>
+      <th>...</th>
+      <th>loudness</th>
+      <th>mode</th>
+      <th>speechiness</th>
+      <th>acousticness</th>
+      <th>instrumentalness</th>
+      <th>liveness</th>
+      <th>valence</th>
+      <th>tempo</th>
+      <th>duration_ms</th>
+      <th>language</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0017A6SJgTbfQVU2EtsPNo</td>
+      <td>Pangarap</td>
+      <td>Barbie's Cradle</td>
+      <td>Minsan pa Nang ako'y napalingon Hindi ko alam ...</td>
+      <td>41</td>
+      <td>1srJQ0njEQgd8w4XSqI4JQ</td>
+      <td>Trip</td>
+      <td>2001-01-01</td>
+      <td>Pinoy Classic Rock</td>
+      <td>37i9dQZF1DWYDQ8wBxd7xt</td>
+      <td>...</td>
+      <td>-10.068</td>
+      <td>1</td>
+      <td>0.0236</td>
+      <td>0.27900</td>
+      <td>0.01170</td>
+      <td>0.0887</td>
+      <td>0.566</td>
+      <td>97.091</td>
+      <td>235440</td>
+      <td>tl</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>004s3t0ONYlzxII9PLgU6z</td>
+      <td>I Feel Alive</td>
+      <td>Steady Rollin</td>
+      <td>The trees, are singing in the wind The sky blu...</td>
+      <td>28</td>
+      <td>3z04Lb9Dsilqw68SHt6jLB</td>
+      <td>Love &amp; Loss</td>
+      <td>2017-11-21</td>
+      <td>Hard Rock Workout</td>
+      <td>3YouF0u7waJnolytf9JCXf</td>
+      <td>...</td>
+      <td>-4.739</td>
+      <td>1</td>
+      <td>0.0442</td>
+      <td>0.01170</td>
+      <td>0.00994</td>
+      <td>0.3470</td>
+      <td>0.404</td>
+      <td>135.225</td>
+      <td>373512</td>
+      <td>en</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>00chLpzhgVjxs1zKC9UScL</td>
+      <td>Poison</td>
+      <td>Bell Biv DeVoe</td>
+      <td>NA Yeah, Spyderman and Freeze in full effect U...</td>
+      <td>0</td>
+      <td>6oZ6brjB8x3GoeSYdwJdPc</td>
+      <td>Gold</td>
+      <td>2005-01-01</td>
+      <td>Back in the day - R&amp;B, New Jack Swing, Swingbe...</td>
+      <td>3a9y4eeCJRmG9p4YKfqYIx</td>
+      <td>...</td>
+      <td>-7.504</td>
+      <td>0</td>
+      <td>0.2160</td>
+      <td>0.00432</td>
+      <td>0.00723</td>
+      <td>0.4890</td>
+      <td>0.650</td>
+      <td>111.904</td>
+      <td>262467</td>
+      <td>en</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>00cqd6ZsSkLZqGMlQCR0Zo</td>
+      <td>Baby It's Cold Outside (feat. Christina Aguilera)</td>
+      <td>CeeLo Green</td>
+      <td>I really can't stay Baby it's cold outside I'v...</td>
+      <td>41</td>
+      <td>3ssspRe42CXkhPxdc12xcp</td>
+      <td>CeeLo's Magic Moment</td>
+      <td>2012-10-29</td>
+      <td>Christmas Soul</td>
+      <td>6FZYc2BvF7tColxO8PBShV</td>
+      <td>...</td>
+      <td>-5.819</td>
+      <td>0</td>
+      <td>0.0341</td>
+      <td>0.68900</td>
+      <td>0.00000</td>
+      <td>0.0664</td>
+      <td>0.405</td>
+      <td>118.593</td>
+      <td>243067</td>
+      <td>en</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>00emjlCv9azBN0fzuuyLqy</td>
+      <td>Dumb Litty</td>
+      <td>KARD</td>
+      <td>Get up out of my business You don't keep me fr...</td>
+      <td>65</td>
+      <td>7h5X3xhh3peIK9Y0qI5hbK</td>
+      <td>KARD 2nd Digital Single ‘Dumb Litty’</td>
+      <td>2019-09-22</td>
+      <td>K-Party Dance Mix</td>
+      <td>37i9dQZF1DX4RDXswvP6Mj</td>
+      <td>...</td>
+      <td>-1.993</td>
+      <td>1</td>
+      <td>0.0409</td>
+      <td>0.03700</td>
+      <td>0.00000</td>
+      <td>0.1380</td>
+      <td>0.240</td>
+      <td>130.018</td>
+      <td>193160</td>
+      <td>en</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 25 columns</p>
+</div></div></div>
 </div>
 </div>
 
