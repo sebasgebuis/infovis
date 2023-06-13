@@ -15,17 +15,21 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import pandas as pd
-import numpy as np 
+fig = px.pie(data, values = 'track_popularity', names='playlist_genre', title='Popularity by genre', hole = 0.8)
+fig.update_layout(showlegend=False, height = 600)
+fig.update_traces(textposition = 'outside', textinfo='label+percent')
+fig.show()
 
+print( cut_bins.astype('category').cat.codes)
 ------------------
 
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Cell [1;32mIn[1], line 1[0m
-[1;32m----> 1[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
-[0;32m      2[0m [38;5;28;01mimport[39;00m [38;5;21;01mnumpy[39;00m [38;5;28;01mas[39;00m [38;5;21;01mnp[39;00m 
+[1;31mNameError[0m                                 Traceback (most recent call last)
+Cell [1;32mIn[3], line 6[0m
+[0;32m      3[0m fig[38;5;241m.[39mupdate_traces(textposition [38;5;241m=[39m [38;5;124m'[39m[38;5;124moutside[39m[38;5;124m'[39m, textinfo[38;5;241m=[39m[38;5;124m'[39m[38;5;124mlabel+percent[39m[38;5;124m'[39m)
+[0;32m      4[0m fig[38;5;241m.[39mshow()
+[1;32m----> 6[0m [38;5;28mprint[39m( [43mcut_bins[49m[38;5;241m.[39mastype([38;5;124m'[39m[38;5;124mcategory[39m[38;5;124m'[39m)[38;5;241m.[39mcat[38;5;241m.[39mcodes)
 
-[1;31mModuleNotFoundError[0m: No module named 'pandas'
+[1;31mNameError[0m: name 'cut_bins' is not defined
 
