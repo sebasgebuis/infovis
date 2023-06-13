@@ -1,3 +1,4 @@
-# jupyter-book-template
+# Informatie Visualisatie Project
 
-This repository hosts the tutorial and template code for building a basic Jupyter Book website.
+Deze repository is gemaakt voor de Data Story van Informatie Visualisatie aan de UvA 2023
+
