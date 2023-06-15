@@ -12,9 +12,9 @@ Newer generations however claim that music is currently more diverse than ever.
 
 This brings us to our two standpoints:
 
-#### Popular songs do not sound the same, diversity in music has increased because of the rise of the internet.
+<em> Popular songs do not sound the same, diversity in music has increased because of the rise of the internet. </em>
 
-#### Popular music does sound the same, that is why it is all labeled under one label of "pop music" 
+<em> Popular music does sound the same, that is why it is all labeled under one label of "pop music" </em>
 
 # Data and Preprocessing
 

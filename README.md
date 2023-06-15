@@ -1,4 +1,3 @@
-# Informatie Visualisatie Project
+# Information Visualisation Project
 
-Deze repository is gemaakt voor de Data Story van Informatie Visualisatie aan de UvA 2023
-
+This repository was made for the course Information Visualisation at the University of Amsterdam 2023.
