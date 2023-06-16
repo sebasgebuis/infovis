@@ -15,21 +15,45 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-# Import the Dataset
-data = pd.read_csv('spotify_songs.csv', sep = ',')
-# Creating a second dataframe for popular tracks only
-data_popular = data[data['track_popularity'] > 90]
-
-di
+display(data.corr())
+display(data)
 ------------------
 
 
 [1;31m---------------------------------------------------------------------------[0m
-[1;31mNameError[0m                                 Traceback (most recent call last)
-Cell [1;32mIn[2], line 6[0m
-[0;32m      3[0m [38;5;66;03m# Creating a second dataframe for popular tracks only[39;00m
-[0;32m      4[0m data_popular [38;5;241m=[39m data[data[[38;5;124m'[39m[38;5;124mtrack_popularity[39m[38;5;124m'[39m] [38;5;241m>[39m [38;5;241m90[39m]
-[1;32m----> 6[0m [43mdi[49m
+[1;31mValueError[0m                                Traceback (most recent call last)
+Cell [1;32mIn[7], line 1[0m
+[1;32m----> 1[0m display([43mdata[49m[38;5;241;43m.[39;49m[43mcorr[49m[43m([49m[43m)[49m)
+[0;32m      2[0m display(data)
 
-[1;31mNameError[0m: name 'di' is not defined
+File [1;32m~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\core\frame.py:10054[0m, in [0;36mDataFrame.corr[1;34m(self, method, min_periods, numeric_only)[0m
+[0;32m  10052[0m cols [38;5;241m=[39m data[38;5;241m.[39mcolumns
+[0;32m  10053[0m idx [38;5;241m=[39m cols[38;5;241m.[39mcopy()
+[1;32m> 10054[0m mat [38;5;241m=[39m [43mdata[49m[38;5;241;43m.[39;49m[43mto_numpy[49m[43m([49m[43mdtype[49m[38;5;241;43m=[39;49m[38;5;28;43mfloat[39;49m[43m,[49m[43m [49m[43mna_value[49m[38;5;241;43m=[39;49m[43mnp[49m[38;5;241;43m.[39;49m[43mnan[49m[43m,[49m[43m [49m[43mcopy[49m[38;5;241;43m=[39;49m[38;5;28;43;01mFalse[39;49;00m[43m)[49m
+[0;32m  10056[0m [38;5;28;01mif[39;00m method [38;5;241m==[39m [38;5;124m"[39m[38;5;124mpearson[39m[38;5;124m"[39m:
+[0;32m  10057[0m     correl [38;5;241m=[39m libalgos[38;5;241m.[39mnancorr(mat, minp[38;5;241m=[39mmin_periods)
+
+File [1;32m~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\core\frame.py:1838[0m, in [0;36mDataFrame.to_numpy[1;34m(self, dtype, copy, na_value)[0m
+[0;32m   1836[0m [38;5;28;01mif[39;00m dtype [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m [38;5;28;01mNone[39;00m:
+[0;32m   1837[0m     dtype [38;5;241m=[39m np[38;5;241m.[39mdtype(dtype)
+[1;32m-> 1838[0m result [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_mgr[49m[38;5;241;43m.[39;49m[43mas_array[49m[43m([49m[43mdtype[49m[38;5;241;43m=[39;49m[43mdtype[49m[43m,[49m[43m [49m[43mcopy[49m[38;5;241;43m=[39;49m[43mcopy[49m[43m,[49m[43m [49m[43mna_value[49m[38;5;241;43m=[39;49m[43mna_value[49m[43m)[49m
+[0;32m   1839[0m [38;5;28;01mif[39;00m result[38;5;241m.[39mdtype [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m dtype:
+[0;32m   1840[0m     result [38;5;241m=[39m np[38;5;241m.[39marray(result, dtype[38;5;241m=[39mdtype, copy[38;5;241m=[39m[38;5;28;01mFalse[39;00m)
+
+File [1;32m~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\core\internals\managers.py:1732[0m, in [0;36mBlockManager.as_array[1;34m(self, dtype, copy, na_value)[0m
+[0;32m   1730[0m         arr[38;5;241m.[39mflags[38;5;241m.[39mwriteable [38;5;241m=[39m [38;5;28;01mFalse[39;00m
+[0;32m   1731[0m [38;5;28;01melse[39;00m:
+[1;32m-> 1732[0m     arr [38;5;241m=[39m [38;5;28;43mself[39;49m[38;5;241;43m.[39;49m[43m_interleave[49m[43m([49m[43mdtype[49m[38;5;241;43m=[39;49m[43mdtype[49m[43m,[49m[43m [49m[43mna_value[49m[38;5;241;43m=[39;49m[43mna_value[49m[43m)[49m
+[0;32m   1733[0m     [38;5;66;03m# The underlying data was copied within _interleave, so no need[39;00m
+[0;32m   1734[0m     [38;5;66;03m# to further copy if copy=True or setting na_value[39;00m
+[0;32m   1736[0m [38;5;28;01mif[39;00m na_value [38;5;129;01mis[39;00m [38;5;129;01mnot[39;00m lib[38;5;241m.[39mno_default:
+
+File [1;32m~\anaconda3\envs\jupyterbook\lib\site-packages\pandas\core\internals\managers.py:1794[0m, in [0;36mBlockManager._interleave[1;34m(self, dtype, na_value)[0m
+[0;32m   1792[0m     [38;5;28;01melse[39;00m:
+[0;32m   1793[0m         arr [38;5;241m=[39m blk[38;5;241m.[39mget_values(dtype)
+[1;32m-> 1794[0m     [43mresult[49m[43m[[49m[43mrl[49m[38;5;241;43m.[39;49m[43mindexer[49m[43m][49m [38;5;241m=[39m arr
+[0;32m   1795[0m     itemmask[rl[38;5;241m.[39mindexer] [38;5;241m=[39m [38;5;241m1[39m
+[0;32m   1797[0m [38;5;28;01mif[39;00m [38;5;129;01mnot[39;00m itemmask[38;5;241m.[39mall():
+
+[1;31mValueError[0m: could not convert string to float: '0017A6SJgTbfQVU2EtsPNo'
 
