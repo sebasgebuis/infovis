@@ -350,8 +350,11 @@ document.write(`
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-and-preprocessing">Data and Preprocessing</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-properties">Dataset Properties</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-overview">Variable Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-description">Variable description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 
             </nav>
@@ -369,6 +372,8 @@ document.write(`
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
 <p>Group: 9
 Students: Sebastiaan Gebuis, Anahita Foghahazadeh, Ole Elders, Padma Dhuney</p>
+<p>With the rise of the internet over the past decades, the music landscape has undergone significant changes, resulting in a wide array of genres and songs (Aucouturier &amp; Pachet, 2002). Despite this diversity, there are instances where music exhibits remarkable similarities (Aucouturier &amp; Pachet, 2002). One such example is the “millennial whoop,” a recurring musical pattern prevalent in songs from the 2010s that imparts a sense of familiarity to listeners (Quartz, 2016). This pattern involves transitioning between the fifth and third notes of the musical scale (Quartz, 2016). Such patterns contribute to the perception of similarity in contemporary music.</p>
+<p>This website presents various plots that explore the similarities between songs using the “Audio features and lyrics of Spotify songs” dataset. Through these visualizations, we aim to investigate the extent to which recent music shares common characteristics.</p>
 <div class="section" id="research-subject-diversity-of-popular-music">
 <h2>Research Subject: Diversity of popular music<a class="headerlink" href="#research-subject-diversity-of-popular-music" title="Permalink to this headline">#</a></h2>
 <p>Different generations often clash heads on lots of topics. Music is no exception to this.
@@ -537,6 +542,111 @@ This dataset is semi-structured as it is a CSV file.</p>
 </tbody>
 </table>
 </div>
+<div class="section" id="variable-description">
+<h2>Variable description<a class="headerlink" href="#variable-description" title="Permalink to this headline">#</a></h2>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-center head"><p>Variable</p></th>
+<th class="text-center head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-center"><p>Track id</p></td>
+<td class="text-center"><p>The unique id given to a song by spotify</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Track name</p></td>
+<td class="text-center"><p>The name of a song</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Track Artist</p></td>
+<td class="text-center"><p>The artist who made the song</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Lyrics</p></td>
+<td class="text-center"><p>The lyrics of the song</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Track Popularity</p></td>
+<td class="text-center"><p>The popularity of a song on a scale of 0-100 based on streams</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Track album id</p></td>
+<td class="text-center"><p>The unique id given to the album</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Track album name</p></td>
+<td class="text-center"><p>The name of the album</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Track album release date</p></td>
+<td class="text-center"><p>The release date of the album</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Playlist name</p></td>
+<td class="text-center"><p>Name of the playlist in which the song is</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Playlist id</p></td>
+<td class="text-center"><p>The unique id of the playlist</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Playlist genre</p></td>
+<td class="text-center"><p>The genre of the playlist</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Playlist subgenre</p></td>
+<td class="text-center"><p>The subgenre of the playlist</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Danceability</p></td>
+<td class="text-center"><p>The danceability of a song, calculated based on the beat strength, tempo stability and overall tempo. A value of 0.0 is least danceable and 1.0 is most danceable</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Energy</p></td>
+<td class="text-center"><p>The energy of a song, meassured on a scale of 0.0 - 1.0. Based on the loudness, tempo and amount of noise of a track. A value of 0.0 is least energetic and 1.0 is most energetic</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Key</p></td>
+<td class="text-center"><p>The overall key of a song, mapped to integers using standard Pitch Class notation (0 = C, 1 = C#/D minor, 2 = D)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Loudness</p></td>
+<td class="text-center"><p>The overall loudness of a track in decibels according to LUFS (Loudness Units relative to Full Scale)</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Mode</p></td>
+<td class="text-center"><p>Indicates the modality of a track (minor / major). 0 indicates a minor modality, 1 indicates a major modality</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Speechiness</p></td>
+<td class="text-center"><p>Detects the presence of spoken words in a track. More exclusive speech-like recordings get closer to a value of 1.0, values between 0.33 and 0.66 indicate both music and speech (rap). Values below 0.33 most likely indicate music and other non-speech-like tracks.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Acousticness</p></td>
+<td class="text-center"><p>Indicates the likeliness that a track is acoustic. A 1.0 indicates high confidence that the track is acoustic, while a 0.0 indicates low confidence that a track is acoustic</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Instrumentalness</p></td>
+<td class="text-center"><p>Predicts whether the track contains no vocals. Melodic vocals, such as “Ooh” and “Aah”, are considered instrumentals. A value of 1.0 indicates high probability of no spoken words in the track, a 0.0 indicates high probability of spoken words in the track.</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Liveness</p></td>
+<td class="text-center"><p>Detects the presence of an audience in the recording. High liveness means a high probability that the track was recorded live, in front of an audience.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Valence</p></td>
+<td class="text-center"><p>Describes the positivity of a track. A value of 0.0 indicates a track of low positivity (angry, sad), a 1.0 indicates high positivity in a track (upbeat, cheerful)</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Tempo</p></td>
+<td class="text-center"><p>The tempo of a song in beats per minute (BPM)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-center"><p>Duration ms</p></td>
+<td class="text-center"><p>The duration of a song in miliseconds</p></td>
+</tr>
+<tr class="row-even"><td class="text-center"><p>Language</p></td>
+<td class="text-center"><p>The language of a song, abbreviated (en = English)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="preprocessing">
+<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">#</a></h2>
+<p>The dataset was relatively complete, however few changes still needed to take place in order to make full use of the dataset.</p>
+<p>
+The dataset has a columns named "track_album_release_date". 
+In this column the release date of all songs is stated, however some dates were only in years and not in ISO8601.
+This made it impossible to use the pandas.to_datetime function in order to make graphs with it. Therefore a function was written which added "-01-01" to the end of all dates which only consisted of a year.
+Writing this function allowed for making graphs using the release date as a variable.
+</p>
+<p>
+After changing the dates, the unused columns are dropped. This allows for less resource usage when using the dataset. The columns dropped are: 'language', 'track_id', 'lyrics', 'track_album_id', 'track_album_name', 'playlist_name', 'playlist_id', 'duration_ms'.
+</p>
+</div>
+</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h1>
+<p>Aucouturier, J. J., &amp; Pachet, F. (2002, October). Music similarity measures: What’s the use?. In Ismir (Vol. 7, pp. 339-340).</p>
+<p>Quartz. (2016, August 28). The “millennial whoop” is taking over pop music [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=MN23lFKfpck">https://www.youtube.com/watch?v=MN23lFKfpck</a></p>
 <div class="toctree-wrapper compound">
 </div>
 </div>
@@ -606,8 +716,11 @@ This dataset is semi-structured as it is a CSV file.</p>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#data-and-preprocessing">Data and Preprocessing</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-properties">Dataset Properties</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-overview">Variable Overview</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variable-description">Variable description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
 
   </nav></div>
