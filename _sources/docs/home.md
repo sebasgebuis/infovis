@@ -15,9 +15,9 @@ Newer generations however claim that music is currently more diverse than ever.
 
 This brings us to our two standpoints:
 
-<em> Popular songs do not sound the same, diversity in music has increased because of the rise of the internet. </em>
+<em> <strong> Popular songs do not sound the same, diversity in music has increased because of the rise of the internet. </strong> </em>
 
-<em> Popular music does sound the same, that is why it is all labeled under one label of "pop music" </em>
+<em> <strong> Popular music does sound the same, that is why it is all labeled under one label of "pop music" </strong></em>
 
 # Data and Preprocessing
 
@@ -108,3 +108,15 @@ Aucouturier, J. J., & Pachet, F. (2002, October). Music similarity measures: Wha
  
 
 Quartz. (2016, August 28). The “millennial whoop” is taking over pop music [Video]. YouTube. https://www.youtube.com/watch?v=MN23lFKfpck
+
+# Work Distribution
+
+Sebastiaan Gebuis: Layed the foundation for the project. Made most of the visualisations in the beginning, which were further explored by others. Also responsible for the functioning of the repository / GitHub site. Wrote most of the "home.md" file.
+Anahita Foghahazadeh: Further explored visualisations and wrote in depth captions for all visualitions.
+Ole Elders: Wrote the introduction in the "home.md" file.
+Padma Dhuney: Explored visualisations.
+
+# Github Repository
+
+The link to the GitHub repository can be found [here](https://github.com/sebasgebuis/infovis) <br>
+The link to the GitHub site can be found [here](https://sebasgebuis.github.io/infovis)
