@@ -3,11 +3,12 @@
 <!DOCTYPE html>
 
 
-<html >
+<html lang="en" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction &#8212; Informatie Visualisatie Project</title>
   
   
@@ -43,6 +44,7 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
@@ -65,7 +67,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Information Visualisation Project" href="notebook.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="None"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
   
   
@@ -370,32 +372,32 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <h1> Information Visualisation Data Story </h1>
-<div class="tex2jax_ignore mathjax_ignore section" id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">#</a></h1>
+<section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
 <p>Group: 9
 Students: Sebastiaan Gebuis, Anahita Foghahazadeh, Ole Elders, Padma Dhuney</p>
 <p>With the rise of the internet over the past decades, the music landscape has undergone significant changes, resulting in a wide array of genres and songs (Aucouturier &amp; Pachet, 2002). Despite this diversity, there are instances where music exhibits remarkable similarities (Aucouturier &amp; Pachet, 2002). One such example is the “millennial whoop,” a recurring musical pattern prevalent in songs from the 2010s that imparts a sense of familiarity to listeners (Quartz, 2016). This pattern involves transitioning between the fifth and third notes of the musical scale (Quartz, 2016). Such patterns contribute to the perception of similarity in contemporary music.</p>
 <p>This website presents various plots that explore the similarities between songs using the “Audio features and lyrics of Spotify songs” dataset. Through these visualizations, we aim to investigate the extent to which recent music shares common characteristics.</p>
-<div class="section" id="research-subject-diversity-of-popular-music">
-<h2>Research Subject: Diversity of popular music<a class="headerlink" href="#research-subject-diversity-of-popular-music" title="Permalink to this headline">#</a></h2>
+<section id="research-subject-diversity-of-popular-music">
+<h2>Research Subject: Diversity of popular music<a class="headerlink" href="#research-subject-diversity-of-popular-music" title="Permalink to this heading">#</a></h2>
 <p>Different generations often clash heads on lots of topics. Music is no exception to this.
 Older generations often claim that music sounds the same nowadays, back in their time music was unique and special.
 Newer generations however claim that music is currently more diverse than ever.</p>
 <p>This brings us to our two standpoints:</p>
 <p><em> <strong> Popular songs do not sound the same, diversity in music has increased because of the rise of the internet. </strong> </em></p>
 <p><em> <strong> Popular music does sound the same, that is why it is all labeled under one label of “pop music” </strong></em></p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="data-and-preprocessing">
-<h1>Data and Preprocessing<a class="headerlink" href="#data-and-preprocessing" title="Permalink to this headline">#</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="data-and-preprocessing">
+<h1>Data and Preprocessing<a class="headerlink" href="#data-and-preprocessing" title="Permalink to this heading">#</a></h1>
 <p>The dataset used for this project is “Audio features and lyrics of Spotify songs” by Muhammad Nakhaee (<a class="reference external" href="https://www.kaggle.com/datasets/imuhammad/audio-features-and-lyrics-of-spotify-songs">https://www.kaggle.com/datasets/imuhammad/audio-features-and-lyrics-of-spotify-songs</a>).
 This dataset is semi-structured as it is a CSV file.</p>
-<div class="section" id="dataset-properties">
-<h2>Dataset Properties<a class="headerlink" href="#dataset-properties" title="Permalink to this headline">#</a></h2>
-<table class="colwidths-auto table">
+<section id="dataset-properties">
+<h2>Dataset Properties<a class="headerlink" href="#dataset-properties" title="Permalink to this heading">#</a></h2>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-center head"><p>Attributes</p></th>
-<th class="text-center head"><p>Records</p></th>
+<tr class="row-odd"><th class="head text-center"><p>Attributes</p></th>
+<th class="head text-center"><p>Records</p></th>
 </tr>
 </thead>
 <tbody>
@@ -404,15 +406,15 @@ This dataset is semi-structured as it is a CSV file.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="variable-overview">
-<h2>Variable Overview<a class="headerlink" href="#variable-overview" title="Permalink to this headline">#</a></h2>
-<table class="colwidths-auto table">
+</section>
+<section id="variable-overview">
+<h2>Variable Overview<a class="headerlink" href="#variable-overview" title="Permalink to this heading">#</a></h2>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-center head"><p>Variable</p></th>
-<th class="text-center head"><p>Variable Type</p></th>
-<th class="text-center head"><p>Measurement Scale</p></th>
-<th class="text-center head"><p>Relevant Statistic</p></th>
+<tr class="row-odd"><th class="head text-center"><p>Variable</p></th>
+<th class="head text-center"><p>Variable Type</p></th>
+<th class="head text-center"><p>Measurement Scale</p></th>
+<th class="head text-center"><p>Relevant Statistic</p></th>
 </tr>
 </thead>
 <tbody>
@@ -543,13 +545,13 @@ This dataset is semi-structured as it is a CSV file.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="variable-description">
-<h2>Variable description<a class="headerlink" href="#variable-description" title="Permalink to this headline">#</a></h2>
-<table class="colwidths-auto table">
+</section>
+<section id="variable-description">
+<h2>Variable description<a class="headerlink" href="#variable-description" title="Permalink to this heading">#</a></h2>
+<table class="table">
 <thead>
-<tr class="row-odd"><th class="text-center head"><p>Variable</p></th>
-<th class="text-center head"><p>Description</p></th>
+<tr class="row-odd"><th class="head text-center"><p>Variable</p></th>
+<th class="head text-center"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
@@ -630,9 +632,9 @@ This dataset is semi-structured as it is a CSV file.</p>
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="preprocessing">
-<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="preprocessing">
+<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this heading">#</a></h2>
 <p>The dataset was relatively complete, however few changes still needed to take place in order to make full use of the dataset.</p>
 <p>
 The dataset has a columns named "track_album_release_date". 
@@ -643,27 +645,27 @@ Writing this function allowed for making graphs using the release date as a vari
 <p>
 After changing the dates, the unused columns are dropped. This allows for less resource usage when using the dataset. The columns dropped are: 'language', 'track_id', 'lyrics', 'track_album_id', 'track_album_name', 'playlist_name', 'playlist_id', 'duration_ms'.
 </p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="references">
-<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">#</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h1>
 <p>Aucouturier, J. J., &amp; Pachet, F. (2002, October). Music similarity measures: What’s the use?. In Ismir (Vol. 7, pp. 339-340).</p>
 <p>Quartz. (2016, August 28). The “millennial whoop” is taking over pop music [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=MN23lFKfpck">https://www.youtube.com/watch?v=MN23lFKfpck</a></p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="work-distribution">
-<h1>Work Distribution<a class="headerlink" href="#work-distribution" title="Permalink to this headline">#</a></h1>
-<p>Sebastiaan Gebuis: Layed the foundation for the project. Made most of the visualisations in the beginning, which were further explored by others. Also responsible for the functioning of the repository / GitHub site. Wrote most of the “<a class="reference external" href="http://home.md">home.md</a>” file.
-Anahita Foghahazadeh: Further explored visualisations and wrote in depth captions for all visualitions.
-Ole Elders: Wrote the introduction in the “<a class="reference external" href="http://home.md">home.md</a>” file.
-Padma Dhuney: Explored visualisations.</p>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="github-repository">
-<h1>Github Repository<a class="headerlink" href="#github-repository" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="work-distribution">
+<h1>Work Distribution<a class="headerlink" href="#work-distribution" title="Permalink to this heading">#</a></h1>
+<p>Sebastiaan Gebuis: Layed the foundation for the project. Made most of the visualisations in the beginning, which were further explored by others. Also responsible for the functioning of the repository / GitHub site. Wrote most of the “<a class="reference external" href="http://home.md">home.md</a>” file.</p>
+<p>Anahita Foghahazadeh: Found the dataset, further explored visualisations and wrote in depth captions for all visualitions.</p>
+<p>Ole Elders: Wrote the introduction in the “<a class="reference external" href="http://home.md">home.md</a>” file.</p>
+<p>Padma Dhuney: Explored visualisations.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="github-repository">
+<h1>Github Repository<a class="headerlink" href="#github-repository" title="Permalink to this heading">#</a></h1>
 <p>The link to the GitHub repository can be found <a class="reference external" href="https://github.com/sebasgebuis/infovis">here</a> <br>
 The link to the GitHub site can be found <a class="reference external" href="https://sebasgebuis.github.io/infovis">here</a></p>
 <div class="toctree-wrapper compound">
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {

@@ -112,8 +112,11 @@ Quartz. (2016, August 28). The “millennial whoop” is taking over pop music [
 # Work Distribution
 
 Sebastiaan Gebuis: Layed the foundation for the project. Made most of the visualisations in the beginning, which were further explored by others. Also responsible for the functioning of the repository / GitHub site. Wrote most of the "home.md" file.
-Anahita Foghahazadeh: Further explored visualisations and wrote in depth captions for all visualitions.
+
+Anahita Foghahazadeh: Found the dataset, further explored visualisations and wrote in depth captions for all visualitions.
+
 Ole Elders: Wrote the introduction in the "home.md" file.
+
 Padma Dhuney: Explored visualisations.
 
 # Github Repository
