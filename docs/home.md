@@ -112,7 +112,11 @@ Quartz. (2016, August 28). The “millennial whoop” is taking over pop music [
 # Reflection
 
 During the pear review we've received valuable feedback from fellow student. Overall, the feedback was very positive and encouraging, which served as a source of motivation and assurance. 
+
+
 However, several students raised a specific concern regarding the clarity of the scatterplot that was made. For many students the scatterplot was not clear enough and too confusing. To avoid any misunderstanding among readers, we've decided to remove the scatterplot.
+
+
 Overall, the feedback was very positive and helpful for the research and has aided in the completion of this research.
 
 # Work Distribution
