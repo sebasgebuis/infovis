@@ -109,6 +109,16 @@ Aucouturier, J. J., & Pachet, F. (2002, October). Music similarity measures: Wha
 
 Quartz. (2016, August 28). The “millennial whoop” is taking over pop music [Video]. YouTube. https://www.youtube.com/watch?v=MN23lFKfpck
 
+# Reflection
+
+During the pear review we received valuable feedback from fellow students. Overall, the feedback was very positive and encouraging, which served as a source of motivation and assurance. 
+
+
+However, several students raised a specific concern regarding the clarity of the scatterplot that was made. The scatterplot provided information about the instrumentalness and acousticness of popular songs. For many students the scatterplot was not clear enough and too confusing. To avoid any misunderstanding among readers, we've decided to remove the scatterplot.
+
+
+Overall, the feedback was very positive and helpful for the research and has aided in the completion of this research.
+
 # Work Distribution
 
 Sebastiaan Gebuis: Layed the foundation for the project. Made most of the visualisations in the beginning, which were further explored by others. Also responsible for the functioning of the repository / GitHub site. Wrote most of the "home.md" file.
@@ -117,7 +127,7 @@ Anahita Foghahazadeh: Found the dataset, further explored visualisations and wro
 
 Ole Elders: Wrote the introduction in the "home.md" file.
 
-Padma Dhuney: Explored visualisations.
+Padma Dhuney: Explored visualisations and wrote the reflection
 
 # Github Repository
 
